@@ -4,29 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dasar Pemrograman Web</title>
+
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Situbondo</h1>
-      <p>
-        Situbondo, kabupaten yang terletak di pesisir utara pulau Jawa ini
-        merupakan kabupaten yang hijau dengan cuaca yang nyaman untuk
-        dikunjungi, karena dikelilingi oleh perkebunan teh, tembakau dan hutan
-        lindung yang terkenal Baluran.
-      </p>
-
-      <ul>
-        <li><a href="#">Sejarah</a></li>
-        <li><a href="#">Geografis</a></li>
-        <li><a href="#">Wisata</a></li>
-      </ul>
+      <div class="jumbotron">
+        <h1>Situbondo</h1>
+        <p>
+          Situbondo, kabupaten yang terletak di pesisir utara pulau Jawa ini
+          merupakan kabupaten yang hijau dengan cuaca yang nyaman untuk
+          dikunjungi, karena dikelilingi oleh perkebunan teh, tembakau dan hutan
+          lindung yang terkenal Baluran.
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Sejarah</a></li>
+          <li><a href="#">Geografis</a></li>
+          <li><a href="#">Wisata</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <div id="content">
-        <article id="sejarah">
+        <article id="sejarah" class="card">
           <h2>Sejarah</h2>
-          <img src="img/pendopo.jpg" alt="sejarah" />
+          <img
+            src="/assets/images/pendopo.jpg"
+            alt="sejarah"
+            class="featured-image"
+          />
           <p>
             Kabupaten Situbondo memiliki sejarah yang kaya, dimulai dari zaman
             kerajaan Majapahit hingga masa penjajahan Belanda. Pada masa
@@ -36,9 +53,13 @@
           </p>
         </article>
 
-        <article id="geografis">
+        <article id="geografis" class="card">
           <h2>Geografis</h2>
-          <img src="img/alun-alun.jpg" alt="geografis" />
+          <img
+            src="/assets/images/alun-alun.jpg"
+            alt="geografis"
+            class="featured-image"
+          />
           <p>
             Kabupaten Situbondo terletak di sebelah timur pulau Jawa, berbatasan
             dengan Laut Jawa di sebelah utara, Kabupaten Bondowoso di sebelah
@@ -53,7 +74,7 @@
           </p>
         </article>
 
-        <article id="wisata">
+        <article id="wisata" class="card">
           <h2>Wisata</h2>
           <p>
             Kabupaten Situbondo memiliki banyak tempat wisata yang menarik untuk
@@ -64,7 +85,11 @@
 
           <section>
             <h3>Pantai Pasir Putih</h3>
-            <img src="img/pasir-putih.png" alt="pasir putih" />
+            <img
+              src="/assets/images/pasir-putih.png"
+              alt="pasir putih"
+              class="featured-image"
+            />
             <p>
               Pantai Pasir Putih adalah salah satu pantai terindah di Situbondo.
               Dengan pasir putih yang lembut dan air laut yang jernih, pantai
@@ -76,7 +101,11 @@
           </section>
           <section>
             <h3>Taman Nasional Baluran</h3>
-            <img src="img/tn-baluran.jpg" alt="taman nasional baluran" />
+            <img
+              src="/assets/images/tn-baluran.jpg"
+              alt="taman nasional baluran"
+              class="featured-image"
+            />
             <p>
               Taman Nasional Baluran adalah salah satu taman nasional yang
               terletak di Situbondo. Taman ini dikenal dengan keanekaragaman
@@ -89,12 +118,16 @@
       </div>
 
       <aside>
-        <article>
+        <article class="profile card">
           <header>
             <h2>Kabupaten Situbondo</h2>
             <p>Kota Santri Pancasila</p>
             <figure>
-              <img src="img/logo-stb.png" alt="logo-stb" />
+              <img
+                src="/assets/images/logo-stb.png"
+                alt="logo-stb"
+                class="profile-image"
+              />
               <figcaption>Lambang Kabupaten Situbondo</figcaption>
             </figure>
           </header>
