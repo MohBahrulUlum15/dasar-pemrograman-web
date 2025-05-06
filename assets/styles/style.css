@@ -4,6 +4,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -17,14 +18,17 @@ footer {
   padding: 20px;
   color: white;
   background-color: #00a2c6;
+
   text-align: center;
   font-weight: bold;
 }
 
 nav a {
   font-size: 18px;
+
   font-weight: 400;
   text-decoration: none;
+
   color: white;
 }
 
@@ -38,18 +42,20 @@ nav a:hover {
 
 .featured-image {
   width: 100%;
-  max-height: 400px;
+  max-height: 300px;
+
   object-fit: cover;
   object-position: center;
 }
 
-.profile-image {
-  width: 200px;
+.profile img {
+  max-width: 200px;
 }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+
   padding: 20px;
 }
 
@@ -61,14 +67,15 @@ nav a:hover {
   color: white;
 }
 
-nav li {
-  list-style-type: none;
-}
-
 nav ul {
   padding-inline: 4rem;
   display: flex;
+
   gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
 }
 
 nav {
@@ -81,6 +88,7 @@ nav {
 
 main {
   padding: 20px;
+
   display: flex;
   gap: 1.5rem;
 }
@@ -104,7 +112,7 @@ header {
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
   main {
-    flex-row: column nowrap;
+    flex-flow: column nowrap;
   }
 
   main aside {
